@@ -3,6 +3,9 @@ import {ActivatedRoute} from '@angular/router';
 import {PokemonService} from '../shared/services/pokemon.service';
 import {Pokemon} from '../shared/models/pokemon';
 import {Title} from '@angular/platform-browser';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/mergeMap';
+import "rxjs/add/operator/share";
 
 @Component({
   providers: [PokemonService],
@@ -19,7 +22,7 @@ export class PokemonInfoComponent implements OnInit {
   ngOnInit() {
     let observable = this._route.params
       .map(params => params['id'])
-      .flatMap(id => this._service.findOne(id))
+      .mergeMap(id => this._service.findOne(id))
       .share();
     this.loading = true;
     this.failed = false;
