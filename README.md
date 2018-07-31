@@ -19,3 +19,5 @@ Run ` ng build ` to build the project. Use the flag ` --prod ` for production.
 ![Pokemon Description](./src/images/pokemon_description.png)
 
 ## Demo
+
+[Click Here](https://adityatandon007.github.io/pokedex-app/)
