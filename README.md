@@ -1,6 +1,6 @@
 # Pokedex App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli)
 
 ## Development Steps
 
@@ -19,6 +19,3 @@ Run ` ng build ` to build the project. Use the flag ` --prod ` for production.
 ![Pokemon Description](./src/images/pokemon_description.png)
 
 ## Demo
-
-
-
